@@ -1,0 +1,46 @@
+.banner {
+    &__fbic {
+        padding: 121px 0 107px;
+
+        &-imagebox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                min-width: 1000%;
+                min-height: 1000%;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%) scale(.1);
+                -webkit-transform: translateX(-50%) translateY(-50%) scale(.1);
+                z-index: -1;
+                position: absolute;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        &-contentbox {
+            padding-left: 55%;
+            padding-right: 5%;
+            position: relative;
+        }
+
+        &-title {
+            margin-bottom: 32px;
+            font-family: 'Gotham';
+            font-size: 52px;
+            line-height: 62.4px;
+            color: #213a4e;
+            font-weight: 700;
+        }
+
+        &-content {
+            margin-bottom: 32px;
+        }
+    }
+}

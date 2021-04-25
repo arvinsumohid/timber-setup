@@ -1,0 +1,8 @@
+{
+    "name": "vendor/blgor",
+    "type": "wordpress-theme",
+    "require": {
+        "timber/timber": "*"
+    },
+    "license": "MIT"
+}

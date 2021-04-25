@@ -1,0 +1,15 @@
+{#
+/**
+ * Block Name: Banner
+ *
+ * This is the template that displays the Banner.
+ */
+#}
+
+<section class="banner">
+    {% for banner in fields.banner %}
+        {% if banner.acf_fc_layout == 'full_background_image_content' %}
+            {% include 'views/block/banner/full-background-image-content.twig' %}
+        {% endif %}
+    {% endfor %}
+</section>

@@ -1,0 +1,16 @@
+<div class="banner__fbic">
+    <div class="banner__fbic-imagebox">
+        {% if banner.image %}
+        <img src="{{banner.image.url}}" alt="{{banner.image.alt}}">
+        {% endif %}
+    </div>
+    <div class="banner__fbic-contentbox">
+        <{{banner.title_tag}}>{{banner.title_text}}</{{banner.title_tag}}>
+        <div class="banner__fbic-content">
+            {{banner.content}}
+        </div>
+        <div class="banner__fbic-btnbox">
+            <a href="{{banner.button.url}}" class="btn" target="{{banner.button.target}}">{{banner.button.title}}</a>
+        </div>
+    </div>
+</div>

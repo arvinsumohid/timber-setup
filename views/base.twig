@@ -1,0 +1,24 @@
+{% block head_container %}
+    {% include 'head.twig' %}
+{% endblock %}
+
+
+
+<body class="{{body_class}}" data-template="base.twig">
+	<a class="skip-link screen-reader-text" href="#content">Skip to Content</a>
+    {% block header_container %}
+        {% include 'header.twig' %}
+    {% endblock %}
+
+    <main id="content">
+        {% block content %}
+            No block
+        {% endblock %}
+    </main>
+
+    {% block footer_container %}
+        {% include 'footer.twig' %}
+    {% endblock %}
+
+
+</body>
